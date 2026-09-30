@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Thông tin khách hàng</title>
+</head>
+<body>
+    <form method="post" action="config.php">
+        <fieldset>
+            <legend>Enter Your Information</legend>
+            <p><label for="fullname">Fullname:</label> <input id="fullname" name="fullname" type="text" required></p>
+            <p><label for="address">Address:</label> <input id="address" name="address" type="text" required></p>
+            <p><label for="phone">Phone:</label> <input id="phone" name="phone" type="text" required></p>
+            <p>Gender:
+                <label><input type="radio" name="gender" value="Nam" checked> Nam</label>
+                <label><input type="radio" name="gender" value="Nữ"> Nữ</label>
+            </p>
+            <p><label for="country">Country:</label>
+                <select id="country" name="country">
+                    <option value="Việt Nam">Việt Nam</option>
+                    <option value="Lào">Lào</option>
+                    <option value="Campuchia">Campuchia</option>
+                </select>
+            </p>
+            <p>Study:
+                <label><input type="checkbox" name="study[]" value="PHP & MySQL"> PHP &amp; MySQL</label>
+                <label><input type="checkbox" name="study[]" value="ASP.NET"> ASP.NET</label>
+                <label><input type="checkbox" name="study[]" value="CCNA"> CCNA</label>
+                <label><input type="checkbox" name="study[]" value="Security+"> Security+</label>
+            </p>
+            <p><label for="note">Note:</label><br><textarea id="note" name="note" rows="4" cols="50"></textarea></p>
+            <button type="submit">Gửi</button>
+            <button type="reset">Hủy</button>
+        </fieldset>
+    </form>
+</body>
+</html>
